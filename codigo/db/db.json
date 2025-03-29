@@ -1,0 +1,802 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com"
+    },
+    {
+      "id": 2,
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com"
+    },
+    {
+      "id": 3,
+      "login": "rommel",
+      "senha": "123",
+      "nome": "Rommel",
+      "email": "rommel@gmail.com",
+      "telefone": "1423 43213",
+      "endereco": "teste"
+    },
+    {
+      "id": 4,
+      "login": "eduarda",
+      "email": "eduarda@.com",
+      "nome": "Eduarda Vieira",
+      "senha": "123",
+      "foto": "https://avatars.githubusercontent.com/u/159597766?v=4"
+    },
+    {
+      "id": 5,
+      "login": "eric",
+      "email": "eric2@.com2",
+      "nome": "Eric Leal",
+      "senha": "123",
+      "telefone": "12341123",
+      "endereco": "endereço",
+      "foto": "https://avatars.githubusercontent.com/u/181984841?v=4"
+    },
+    {
+      "id": 6,
+      "login": "beatriz",
+      "email": "beatriz@.com",
+      "nome": "Beatriz Camila",
+      "senha": "123",
+      "telefone": "Definitivamente um telefone",
+      "endereco": "Endereço",
+      "foto": "https://avatars.githubusercontent.com/u/181984464?v=4"
+    },
+    {
+      "id": 7,
+      "login": "gustavo",
+      "email": "gustavo@.com",
+      "nome": "Gustavo Montanari",
+      "senha": "123",
+      "foto": "https://avatars.githubusercontent.com/u/178229820?v=4",
+      "telefone": "TELEFONE",
+      "endereco": "ENDEREÇO"
+    },
+    {
+      "id": 8,
+      "login": "guilherme",
+      "email": "guilherme@.com",
+      "nome": "Guilherme Marques",
+      "senha": "123",
+      "foto": "https://avatars.githubusercontent.com/u/137842877?v=4",
+      "telefone": "Definitivamente mais um telefone",
+      "endereco": "rua 2"
+    },
+    {
+      "id": 9,
+      "login": "laura",
+      "email": "laura@.com",
+      "nome": "Laura Pontara",
+      "senha": "123",
+      "foto": "https://avatars.githubusercontent.com/u/179180583?v=4",
+      "telefone": "enofeleT",
+      "endereco": "oçerednE"
+    }
+  ],
+  "autores": [
+    {
+      "id": 1,
+      "login": "robert_kiyosaki",
+      "senha": "senha1234",
+      "nome": "Robert Kiyosaki",
+      "email": "robert.kiyosaki@gmail.com"
+    },
+    {
+      "id": 2,
+      "login": "harv_teker",
+      "senha": "senha5678",
+      "nome": "Harv T. Eker",
+      "email": "harv.teker@gmail.com"
+    },
+    {
+      "id": 3,
+      "login": "gustavo_cerbasi",
+      "senha": "senha91011",
+      "nome": "Gustavo Cerbasi",
+      "email": "gustavo.cerbasi@gmail.com"
+    },
+    {
+      "id": 4,
+      "login": "nathalia_arcuri",
+      "senha": "senha1213",
+      "nome": "Nathalia Arcuri",
+      "email": "nathalia.arcuri@gmail.com"
+    },
+    {
+      "id": 5,
+      "login": "thiago_nigro",
+      "senha": "senha1415",
+      "nome": "Thiago Nigro",
+      "email": "thiago.nigro@gmail.com"
+    },
+    {
+      "id": 6,
+      "login": "george_clason",
+      "senha": "senha1617",
+      "nome": "George S. Clason",
+      "email": "george.clason@gmail.com"
+    },
+    {
+      "id": 7,
+      "login": "jose_pio_martins",
+      "senha": "senha1819",
+      "nome": "José Pio Martins",
+      "email": "jose.martins@gmail.com"
+    },
+    {
+      "id": 8,
+      "login": "napoleon_hill",
+      "senha": "senha2021",
+      "nome": "Napoleon Hill",
+      "email": "napoleon.hill@gmail.com"
+    },
+    {
+      "id": 9,
+      "login": "paulo_portinho",
+      "senha": "senha2223",
+      "nome": "Paulo Portinho",
+      "email": "paulo.portinho@gmail.com"
+    },
+    {
+      "id": 10,
+      "login": "mauro_halfeld",
+      "senha": "senha2425",
+      "nome": "Mauro Halfeld",
+      "email": "mauro.halfeld@gmail.com"
+    },
+    {
+      "id": 11,
+      "login": "elaine_toledo",
+      "senha": "senha2627",
+      "nome": "Elaine Toledo",
+      "email": "elaine.toledo@gmail.com"
+    },
+    {
+      "id": 12,
+      "login": "reinaldo_domingos",
+      "senha": "senha2829",
+      "nome": "Reinaldo Domingos",
+      "email": "reinaldo.domingos@gmail.com"
+    },
+    {
+      "id": 13,
+      "login": "benjamin_graham",
+      "senha": "senha3031",
+      "nome": "Benjamin Graham",
+      "email": "benjamin.graham@gmail.com"
+    },
+    {
+      "id": 14,
+      "login": "robert_hagstrom",
+      "senha": "senha3233",
+      "nome": "Robert G. Hagstrom",
+      "email": "robert.hagstrom@gmail.com"
+    },
+    {
+      "id": 15,
+      "login": "decio_bazin",
+      "senha": "senha3435",
+      "nome": "Décio Bazin",
+      "email": "decio.bazin@gmail.com"
+    },
+    {
+      "id": 16,
+      "login": "aswath_damodaran",
+      "senha": "senha3637",
+      "nome": "Aswath Damodaran",
+      "email": "aswath.damodaran@gmail.com"
+    }
+  ],
+  "livros": [
+    {
+      "titulo": "Pai Rico, Pai Pobre",
+      "autor": "Robert Kiyosaki",
+      "editora": "Alta Books",
+      "ano": 2017,
+      "categoria": "Educação Financeira",
+      "sinopse": "Kiyosaki usa usa própria vivência na narrativa, que busca desenvolver uma mentalidade empreendedora nas pessoas.  O milionário americano é filho de um funcionário público que, apesar de ser inteligente e honesto, nunca havia conseguido atingir a independência financeira. Ele é o pai pobre.  Em contrapartida, o pai rico é representado pelo melhor amigo do escritor, um comerciante que conseguiu construir grande riqueza devido à forma como lidava com dinheiro e que ensinou a ele tudo sobre finanças.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/01/livro-pai-rico-pai-pobre-robert-kiyosaki-1-768x1073.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-pai-rico-pai-pobre",
+      "id": 1
+    },
+    {
+      "titulo": "Os Segredos da Mente Milionária",
+      "autor": "Harv T. Eker",
+      "editora": "Sextante",
+      "ano": 2006,
+      "categoria": "Educação Financeira",
+      "sinopse": "O milionário americano Harv T. Eker compartilha, em Os Segredos da Mente Milionária, um pouco de sua história pessoal, além de contar como tudo tomou um novo rumo após a substituição de crenças negativas relativas ao dinheiro por ideias positivas.  Dessa forma, a ideia principal deste livro de educação financeira é mostrar como a mudança de mentalidade pode te ajudar a atingir seus objetivos financeiros e como fazer isso por meio de 17 arquivos de riqueza.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/01/livro-Os-Segredos-da-Mente-Milionaria-Harv-Eker.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-o-segredo-da-mente-milion%C3%A1ria",
+      "id": 2
+    },
+    {
+      "titulo": "Me Poupe!: 10 passos para nunca mais faltar dinheiro no seu bolso",
+      "autor": "Nathalia Arcuri",
+      "editora": "Sextante",
+      "ano": 2020,
+      "categoria": "Finanças Pessoais",
+      "sinopse": "Aos 30 anos, Nathalia Arcuri largou seu emprego como repórter de TV para montar o canal Me Poupe! no Youtube, que hoje é visto por mais de 8 milhões de pessoas por mês.  Com isso, ao completar 32 anos, se tornou milionária.  Em Me Poupe, a jornalista explica de forma fácil e didática os principais passos para quem quer buscar a liberdade financeira, mostrando hábitos que prejudicam sua saúde financeira.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/01/livro-Me-Poupe-Nathalia-Arcuri.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-me-poupe",
+      "id": 3
+    },
+    {
+      "titulo": "O Poder da Educação Financeira",
+      "autor": "Robert Kiyosaki",
+      "editora": "Alta Books",
+      "ano": 2017,
+      "categoria": "Educação Financeira",
+      "sinopse": "Neste livro, Robert Kiyosaki nos mostra como o conhecimento financeiro pode mudar nossa vida mesmo que tenhamos nascido em condições desfavoráveis. O autor nos convida a não nos limitar às circunstâncias, mas buscar uma transformação através da educação.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/02/512OUIeALJL._SX356_BO1204203200_.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-o-poder-da-educacao-financeira",
+      "id": 4
+    },
+    {
+      "titulo": "Do mil ao milhão: Sem cortar o cafezinho",
+      "autor": "Thiago Nigro",
+      "editora": "HarperCollins",
+      "ano": 2018,
+      "categoria": "Investimentos",
+      "sinopse": "No livro Do Mil ao Milhão, Thiago Nigro, criador da plataforma O Primo Rico, traz três pilares para atingir esse sonho: gastar bem, investir melhor e ganhar mais.   Além disso, o escritor mostra utilizando dados e sua própria experiência que é possível chegar à riqueza desde que se esteja disposto a aprender e se dedicar. ",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/02/41TsvI70n9L._SX335_BO1204203200_.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-do-mil-ao-milhao",
+      "id": 5
+    },
+    {
+      "titulo": "Como Organizar sua Vida Financeira",
+      "autor": "Gustavo Cerbasi",
+      "editora": "Sextante",
+      "ano": 2015,
+      "categoria": "Planejamento Financeiro",
+      "sinopse": "Como Organizar Sua Vida Financeira é um dos livros de finanças mais completos sobre organização financeira pessoal. Nele, Gustavo Cerbasi nos ensina todos os detalhes de um planejamento eficiente.  A saber, ele também trata de assuntos como cartão de crédito, financiamento, aposentadoria, impostos, entre outras coisas.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/02/41TwBUth0QL._SX346_BO1204203200_.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-como-organizar-sua-vida-financeira",
+      "id": 6
+    },
+    {
+      "titulo": "O homem mais rico da Babilônia",
+      "autor": "George S. Clason",
+      "editora": "HarperCollins",
+      "ano": 2017,
+      "categoria": "Educação Financeira",
+      "sinopse": "Tomando como base os segredos de sucesso dos antigos babilônios, O Homem Mais Rico da Babilônia traz lições sobre como multiplicar riqueza e solucionar problemas financeiros.  George S. Clason mostra soluções sábias e atuais para evitar a falta de dinheiro, com dicas de como não desperdiçar recursos durante tempos de opulência.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/02/41WJy1N1dL._SX333_BO1204203200_.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-o-homem-mais-rico-da-babilonia",
+      "id": 7
+    },
+    {
+      "titulo": "A Riqueza da Vida Simples",
+      "autor": "Gustavo Cerbasi",
+      "editora": "Sextante",
+      "ano": 2019,
+      "categoria": "Finanças Pessoais",
+      "sinopse": "O autor nos convida a uma reflexão sobre nosso estilo de vida. Ele entende que muitas pessoas não alcançam seus sonhos porque têm um estilo de vida inadequado.  Portanto, Gustavo Cerbasi nos convida a reduzir custos fixos e ter fartura apenas no que é realmente importante para nós.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/02/41l8rauMRxL._SX346_BO1204203200_.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-a-riqueza-da-vida-simples",
+      "id": 8
+    },
+    {
+      "titulo": "Dinheiro: Os segredos de quem tem",
+      "autor": "Gustavo Cerbasi",
+      "editora": "Sextante",
+      "ano": 2016,
+      "categoria": "Finanças Pessoais",
+      "sinopse": "Quer entender de forma mais fácil temas como aposentadoria, investimentos e empreendedorismo? Este livro de Gustavo Cerbasi se propõe a explicar isso e muito mais de forma didática.  A obra desmistifica a forma como as pessoas enriquecem, que inclui hábitos cotidianos, disciplina, trabalho duro, economias e um padrão de vida adequado. Além disso, o autor mostra como equilibrar as contas e conquistar a liberdade financeira, além de reduzir despesas e gerenciar os ganhos.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/02/51Z2opfjCKL._SX346_BO1204203200_.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-dinheiro-segredos-de-quem-tem",
+      "id": 9
+    },
+    {
+      "titulo": "Pais Inteligentes Enriquecem seus Filhos",
+      "autor": "Gustavo Cerbasi",
+      "editora": "Sextante",
+      "ano": 2019,
+      "categoria": "Educação Financeira",
+      "sinopse": "Mais importante do que juntar dinheiro durante anos para dar aos filhos é lhes ensinar como lidar com ele.  Por isso, Gustavo Cerbasi dá várias lições aos pais para que eles possam educar financeiramente os seus filhos para que estes tenham um futuro próspero.   ",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/02/419MdeYDiXL._SX346_BO1204203200_.jpg",
+      "compra": "https://www.mobills.com.br/blog/amazon-pais-inteligentes-enriquecem-seus-filhos",
+      "id": 10
+    },
+    {
+      "titulo": "Quem pensa enriquece",
+      "autor": "Napoleon Hill",
+      "editora": "Citadel",
+      "ano": 2018,
+      "categoria": "Planejamento Financeiro",
+      "sinopse": "Com mais de 30 milhões de exemplares vendidos no mundo, Quem pensa enriquece é um dos maiores best-sellers (do inglês: “mais vendido”) do mercado editorial.  Nele, Hill conta o que aprendeu ao acompanhar de perto a ascensão de 500 das maiores fortunas do mundo, como de Henry Ford, Theodore Roosevelt, King Gillette e John Rockefeller.  O livro traz 15 características comuns a todos esses grandes vencedores e ensina como você pode fazer para se tornar um deles.",
+      "capa": "https://m.media-amazon.com/images/I/61x4XUF8zvL._SL1360_.jpg",
+      "compra": "https://www.amazon.com.br/Quem-Pensa-Enriquece-Legado-Napoleon/dp/8568014542/ref=sr_1_1_sspa?adgrpid=130377715910&dib=eyJ2IjoiMSJ9.TALZaNoHg8bGxNNKKsCEzjxewwcFMOSCn_WxKu-Wq9ALBqAFERpj46SHyBz6BVn2KWHZhuWZpnsi3P2zg9_42Nq23T_VAL9508OBnnvtSJpHNCQ12bdWDzo_zcAI_GrjM28kFw-eUATtK2zut8bIYf22q5Gtft1mz67Rq8s8Vt2pemt_e5eQOCjsVwDBJUNE4VJdvhnYXlOyBGAMa8XR4J0LBO6u8jxFC1ozT4Y4VkzoV-2fyTpXX4Fadka9TXQM0m7CEnxG45x5Uwr5PChvbRiAaC5TzwVVNp9VJdhYO6I.-CSiACTISiIoiQ9fmJCCBEaiJv-Q7YMxIttdB7zCTe8&dib_tag=se&hvadid=595815710575&hvdev=c&hvlocphy=9196984&hvnetw=g&hvqmt=e&hvrand=878683793643002684&hvtargid=kwd-331526228625&hydadcr=5735_13215258&keywords=quem+pensa+enriquece&qid=1731852726&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+      "id": 11
+    },
+    {
+      "titulo": "O milionário mora ao lado – Os surpreendentes segredos dos ricaços americanos",
+      "autor": "Thomas J. Stanley e William D. Danko",
+      "editora": "Manole",
+      "ano": 1999,
+      "categoria": "Educação Financeira",
+      "sinopse": "Stanley e Danko trazem nesta obra o fruto de uma ampla pesquisa sobre os hábitos dos milionários americanos no final dos anos 1990.  O resultado que obtiveram é que as pessoas que mais juntam dinheiro costumam ter hábitos simples, bem distante do estereótipo de ostentação que habita o imaginário popular.  Este livro responde quem são os ricos de verdade, quais suas ocupações, como fazem investimentos e como ficaram ricos.",
+      "capa": "https://m.media-amazon.com/images/I/614FomBoHeL._SL1000_.jpg",
+      "compra": "https://www.amazon.com.br/gp/product/8520409571/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=mobills-20&creative=9325&linkCode=as2&creativeASIN=8520409571&linkId=d35fbeec45eccc676cf62dd917f7447c",
+      "id": 12
+    },
+    {
+      "titulo": "Saiba Mais Para Gastar Menos",
+      "autor": "Elaine Toledo",
+      "editora": "Alaúde",
+      "ano": 2012,
+      "categoria": "Planejamento Financeiro",
+      "sinopse": "Todos que chegam no final do mês sem conseguir pagar todas as contas devem se fazer esse questionamento: ganho pouco ou estou gastando demais? Neste livro, Elaine Toledo ensina sobre educação financeira, como definir prioridades sem desrespeitá-las.  É uma ótima obra para quem quer sair do vermelho ou simplesmente mudar a forma de ver o próprio dinheiro.",
+      "capa": "https://m.media-amazon.com/images/I/71gCC7skoBL._SL1500_.jpg",
+      "compra": "https://www.amazon.com.br/Gastar-Aprenda-Desenvolver-Intelig%C3%AAncia-Financeira/dp/8578811291/ref=sr_1_1?adgrpid=80144530214&dib=eyJ2IjoiMSJ9.KPtHP5NeqZk5KfsnrismWNGDn7sH9iAokg4waQGJEM3GjHj071QN20LucGBJIEps.qLjnnbrXNf41lowemcE9rNAINlv50pJN_wDeBx8Muv8&dib_tag=se&hvadid=425954652201&hvdev=c&hvlocphy=9196984&hvnetw=g&hvqmt=e&hvrand=15330238632931244229&hvtargid=kwd-336167295260&hydadcr=5659_11235235&keywords=saiba+mais+para+gastar+menos&qid=1731852979&sr=8-1",
+      "id": 13
+    },
+    {
+      "titulo": "O investidor inteligente",
+      "autor": "Benjamin Graham",
+      "editora": "HarperCollins",
+      "ano": 2016,
+      "categoria": "Investimentos",
+      "sinopse": " O investidor inteligente traz os conceitos de Benjamin Graham, um dos maiores consultores de investimentos do século XX.  Este livro traz o conceito de “valor de investimento”, que protege os investidores de cometer erros substanciais e os ensina a desenvolver estratégias de longo prazo.   A obra é tão relevante que se tornou o livro de investimentos preferido de Warren Buffett.",
+      "capa": "https://m.media-amazon.com/images/I/71XhGdYgoTL._SL1500_.jpg",
+      "compra": "https://www.amazon.com.br/gp/product/8595080801/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=mobills-20&creative=9325&linkCode=as2&creativeASIN=8595080801&linkId=62430828fdc6de2ec6c3bb88a4348d6a",
+      "id": 14
+    },
+    {
+      "titulo": "O jeito Warren Buffett de investir: Os segredos do maior investidor do mundo",
+      "autor": "Robert G. Hagstrom",
+      "editora": "Benvirá",
+      "ano": 2019,
+      "categoria": "Investimentos",
+      "sinopse": "Como Warren Buffett se tornou um dos homens mais ricos do mundo e um dos maiores e mais admirados investidores da atualidade?  Este livro de educação financeira com foco em investimentos conta a trajetória do investidor e traz suas técnicas e estratégias, com os princípios básicos que orientam suas compras de ações.",
+      "capa": "https://m.media-amazon.com/images/I/81gLXSghkLS._SL1500_.jpg",
+      "compra": "https://www.amazon.com.br/gp/product/8557173067/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=mobills-20&creative=9325&linkCode=as2&creativeASIN=8557173067&linkId=584aba78559de53c5370aee9a69ba500",
+      "id": 15
+    },
+    {
+      "titulo": "Filosofias de Investimento",
+      "autor": "Aswath Damodaran",
+      "editora": "QualityMark",
+      "ano": 2007,
+      "categoria": "Investimentos",
+      "sinopse": "Trazendo várias filosofias de investimento, essa é uma boa obra para quem ainda não se encontrou nos investimentos ou que segue uma metodologia, mas tem curiosidade de saber mais sobre outras. Esta obra traz filosofias desde investimento em valor e em crescimento a investimento em análise técnica e timing de mercado, mostrando casos de investidores que fizeram com que filosofias funcionassem.",
+      "capa": "https://m.media-amazon.com/images/I/71ZzTvb9DtL._SL1485_.jpg",
+      "compra": "https://www.amazon.com.br/gp/product/8573036664/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=mobills-20&creative=9325&linkCode=as2&creativeASIN=8573036664&linkId=17bfdbcfdea17e3981a0d10c31485920",
+      "id": 16
+    },
+    {
+      "titulo": "Cartas a um jovem investidor",
+      "autor": "Gustavo Cerbasi",
+      "editora": "Sextante",
+      "ano": "2021",
+      "sinopse": "Mais um livro de Cerbasi nesta lista de livros de educação financeira, Cartas a um jovem investidor é uma autobiografia do autor. Ele inclui seus erros e acertos para alcançar o sucesso na área de Finanças e oferece, dessa forma, dicas às pessoas que desejam trilhar caminhos menos sinuosos para obter um futuro financeiramente mais saudável.   Sendo assim, esta é uma boa opção para quem quer começar a desbravar o mercado financeiro brasileiro, ainda restrito a uma pequena parte da população.",
+      "categoria": "Investimentos",
+      "capa": "https://m.media-amazon.com/images/I/81IDsFhPimL._SL1500_.jpg",
+      "compra": "https://www.amazon.com.br/Cartas-jovem-investidor-revista-atualizada/dp/655564219X/ref=sr_1_1?adgrpid=83815318280&dib=eyJ2IjoiMSJ9.khwIZVw3r3g4t7EaYa9LQI7ZtI67dD8ALopw3pZ4eo8JwkkCiWnMd44kFjxD0KODxyKAQt9nAsuOUgpRAafBn3po2cWjqCSUFPvaBF2itP92HsV1JVbHt-XDkmHX2OFNofSZ32J6rUw-wkYmWncpMlDSewIphW8f_X-d7usizPUoN8NJu3tcyTuW4tNCQPY8tqVbdU6-PlGh1hPD4Y5gUcp6sVB49W3R87wycjfFMy_V_RKkKNWeDH2lJo7mIRaiBVxElMMG3Sfq-O3KV6P4wFrzyiuhYHaHr3IE3a3pBNw.wjMpbPGl5NoLL9q-9tIZLQsFbXdDW-a9Oe-ndoNuIJg&dib_tag=se&hvadid=425954610390&hvdev=c&hvlocphy=9196984&hvnetw=g&hvqmt=e&hvrand=12951029485684882566&hvtargid=kwd-466454482749&hydadcr=5659_11235235&keywords=cartas+a+um+jovem+investidor&qid=1731883673&sr=8-1",
+      "id": 17
+    },
+    {
+      "titulo": "A cabeça do investidor",
+      "autor": "Vera Rita de Mello Ferreira",
+      "editora": "Évora",
+      "ano": 2011,
+      "categoria": "Investimentos",
+      "sinopse": "Quem quer investir em ações e investimentos de renda variável sabe que é preciso ter cabeça fria para aguentar os altos e baixos da bolsa de valores.  Este é um livro escrito por psicanalista e psicóloga econômica, portanto não traz recomendações técnicas sobre investimentos.  Mas sim, aborda como a cabeça das pessoas funciona quando têm que tomar decisões sobre seu dinheiro e investi-lo, em especial no mercado financeiro.  Em outras palavras, o livro é uma boa fonte de conhecimento auto pessoal para quem investe.",
+      "capa": "https://m.media-amazon.com/images/I/71cgBy6ogrL._SL1008_.jpg",
+      "compra": "https://amazon.com.br/cabe%C3%A7a-investidor-Conhe%C3%A7a-emo%C3%A7%C3%B5es-investir/dp/8563993127/ref=sr_1_2?adgrpid=126159641453&dib=eyJ2IjoiMSJ9.YDB9pW_kusJGlc_LeWLodIOaUWGZLXlOdiBol_cTN5ioA84CU9lc8scIO22hxWceAep42qTfQdGL0WLVEnTQlerE66PCWimTACq41c_Uhk49q_VrEFIesL1A__-nMG0LUSX3jJMae3ku4gkc7w5IQOjKiEybBGmtRaPUf7K1DOVwMDIJppRy5nJUiqgrXiNeC_Zti2CO5FXWdVLx4QLsUw.6Kb0f8hHgoAFGuXUqsQKZXD9ZgQY_m0bUk1JiPuuBGQ&dib_tag=se&hvadid=595807980144&hvdev=c&hvlocphy=9196984&hvnetw=g&hvqmt=e&hvrand=17755634955351912649&hvtargid=kwd-417715381851&hydadcr=19421_13405935&keywords=a+cabe%C3%A7a+do+investidor&qid=1731853562&sr=8-2&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9",
+      "id": 18
+    },
+    {
+      "titulo": "Casais Inteligentes Enriquecem Juntos",
+      "autor": "Gustavo Cerbasi",
+      "editora": "Sextante",
+      "ano": 2014,
+      "categoria": "Planejamento Financeiro",
+      "sinopse": "O dinheiro é um dos principais problemas em brigas de casal e, para o escritor, é justamente a falta de conversa sobre esse assunto que causa a maioria dos conflitos.  Desse modo, em Casais Inteligentes Enriquecem Juntos, Cerbasi traz diferentes estratégias para formar uma parceria inteligente na administração das finanças da família.  O livro ensina como identificar perfis financeiros, o resultado da combinação dos diferentes perfis, como compartilhar as finanças e planejá-las, em casal, e aspectos básicos sobre investimentos e economia.  Alguns pontos abordados são: os benefícios de um planejamento financeiro de longo prazo, crises financeiras do relacionamento, planos de previdência e seguros e como lidar com a herança.",
+      "capa": "https://www.mobills.com.br/blog/wp-content/uploads/2021/01/livro-Casais-Inteligentes-Enriquecem-Juntos-Gustavo-Cerbasi-768x1104.jpg",
+      "compra": "https://www.amazon.com.br/gp/product/8543101433/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=mobills-20&creative=9325&linkCode=as2&creativeASIN=8543101433&linkId=db9370623a2406ef2677d2ce155e7790",
+      "id": 19
+    },
+    {
+      "titulo": "Quanto custa ficar rico – O guia definitivo para a tão sonhada liberdade financeira",
+      "autor": "Paulo Portinho",
+      "editora": "Alta Books",
+      "ano": 2017,
+      "categoria": "Planejamento Financeiro",
+      "sinopse": "Este é mais um livro para quem quer atingir a liberdade financeira.  Nele, Paulo Portinho ensina o leitor a avaliar seu padrão de vida com base no “índice de riqueza”.  O livro oferece, ainda, alguns conselhos para que o leitor consiga aliar objetivos de consumo com objetivos de renda na aposentadoria, e se planeje para ter um futuro mais seguro e equilibrado.",
+      "capa": "https://m.media-amazon.com/images/I/61gv1duuBoL._SL1000_.jpg",
+      "compra": "https://www.amazon.com.br/gp/product/8550801127/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=mobills-20&creative=9325&linkCode=as2&creativeASIN=8550801127&linkId=21339a5bee0562e02ad2f8bb70a2882f",
+      "id": 20
+    }
+  ],
+  "investimentos": [
+    {
+      "id": 1,
+      "nome": "CDB",
+      "taxa": 10
+    },
+    {
+      "id": 2,
+      "nome": "Tesouro Direto",
+      "taxa": 12
+    },
+    {
+      "id": 3,
+      "nome": "LCI",
+      "taxa": 8
+    },
+    {
+      "id": 4,
+      "nome": "Poupança",
+      "taxa": 6
+    },
+    {
+      "id": 5,
+      "nome": "Fundo DI",
+      "taxa": 9
+    },
+    {
+      "id": 6,
+      "nome": "Debêntures",
+      "taxa": 14
+    },
+    {
+      "id": 7,
+      "nome": "CRI",
+      "taxa": 11
+    },
+    {
+      "id": 8,
+      "nome": "CRA",
+      "taxa": 11
+    },
+    {
+      "id": 9,
+      "nome": "FII",
+      "taxa": 7
+    },
+    {
+      "id": 10,
+      "nome": "Ações",
+      "taxa": 15
+    }
+  ],
+  "historico": [
+    {
+      "id": 1,
+      "nomeRegistro": "Registro 1",
+      "nomeInvestimento": "Tesouro Direto",
+      "valorInvestido": "1200",
+      "valorTotal": "1268.25"
+    },
+    {
+      "id": 2,
+      "nomeRegistro": "Registro 2",
+      "nomeInvestimento": "Ações",
+      "valorInvestido": "1200",
+      "valorTotal": "15432.43"
+    },
+    {
+      "nomeRegistro": "Novo Registro",
+      "nomeInvestimento": "LCI",
+      "valorInvestido": "500",
+      "valorTotal": "540",
+      "id": 3
+    },
+    {
+      "nomeInvestimento": "CRA",
+      "valorInvestido": "1.00",
+      "valorTotal": "13.86",
+      "id": 4
+    },
+    {
+      "nomeInvestimento": "FII",
+      "valorInvestido": "33.00",
+      "valorTotal": "115.44",
+      "id": 5
+    },
+    {
+      "nomeInvestimento": "Debêntures",
+      "valorInvestido": "324.00",
+      "valorTotal": "10058.62",
+      "id": 6
+    },
+    {
+      "nomeRegistro": "Registro 7",
+      "nomeInvestimento": "CRA",
+      "valorInvestido": "1420.00",
+      "valorTotal": "1500.20",
+      "userId": 9,
+      "id": 7
+    },
+    {
+      "nomeRegistro": "Registro 8",
+      "nomeInvestimento": "Tesouro Direto",
+      "valorInvestido": "5000.00",
+      "valorTotal": "5648.64",
+      "userId": 4,
+      "id": 8
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "idusuario": 5,
+      "livroId": 1,
+      "nomeusuario": "Eric Leal 2",
+      "nomeLivro": "Pai Rico, Pai Pobre",
+      "comentario": "comentario",
+      "nota": "4",
+      "fotousuario": "https://avatars.githubusercontent.com/u/181984841?v=4"
+    },
+    {
+      "id": 2,
+      "idusuario": 4,
+      "livroId": 3,
+      "nomeusuario": "Eduarda Vieira",
+      "nomeLivro": "Me Poupe!: 10 passos para nunca mais faltar dinheiro no seu bolso",
+      "comentario": "Livro",
+      "nota": "3",
+      "fotousuario": "https://avatars.githubusercontent.com/u/159597766?v=4"
+    },
+    {
+      "idusuario": 7,
+      "livroId": 19,
+      "nomeusuario": "Gustavo Montanari",
+      "nomeLivro": "Casais Inteligentes Enriquecem Juntos",
+      "comentario": "Muito bom!",
+      "nota": "1",
+      "fotousuario": "https://avatars.githubusercontent.com/u/178229820?v=4",
+      "id": 3
+    },
+    {
+      "idusuario": 8,
+      "livroId": 17,
+      "nomeusuario": "Guilherme Marques",
+      "nomeLivro": "Cartas a um jovem investidor",
+      "comentario": "Muito bom, porem não li",
+      "nota": "5",
+      "fotousuario": "https://avatars.githubusercontent.com/u/137842877?v=4",
+      "id": 4
+    },
+    {
+      "idusuario": 9,
+      "livroId": 16,
+      "nomeusuario": "Laura Pontara",
+      "nomeLivro": "Filosofias de Investimento",
+      "comentario": "Esperava mais desse livro",
+      "nota": "5",
+      "fotousuario": "https://avatars.githubusercontent.com/u/179180583?v=4",
+      "id": 5
+    },
+    {
+      "idusuario": 6,
+      "livroId": 13,
+      "nomeusuario": "Beatriz Camila",
+      "nomeLivro": "Saiba Mais Para Gastar Menos",
+      "comentario": "Definitivamente é um livro",
+      "nota": "2",
+      "fotousuario": "https://avatars.githubusercontent.com/u/181984464?v=4",
+      "id": 6
+    }
+  ],
+  "noticias": [
+    {
+      "titulo": "O que é Bitcoin?",
+      "descricao": "Saiba mais sobre a criptomoeda mais famosa do mundo",
+      "imagem": "imagens/bitcoin.jpg",
+      "autor": "Gustavo H. Montanari",
+      "data": "2024-10-01",
+      "categoria": "criptomoedas",
+      "id": "aa68"
+    },
+    {
+      "titulo": "Ações da Apple em alta",
+      "descricao": "As ações da Apple atingem novos recordes",
+      "imagem": "imagens/apple.jpg",
+      "autor": "Gustavo H. Montanari",
+      "data": "2024-10-02",
+      "categoria": "acoes",
+      "id": "4f39"
+    },
+    {
+      "titulo": "IBOV em 2024",
+      "descricao": "O índice Bovespa e suas perspectivas para este ano",
+      "imagem": "imagens/ibovespa.jpg",
+      "autor": "Gustavo H. Montanari",
+      "data": "2024-10-03",
+      "categoria": "acoes",
+      "id": "6b0a"
+    },
+    {
+      "titulo": "Investindo em Ações",
+      "descricao": "Dicas para quem quer começar a investir em ações",
+      "imagem": "imagens/acoes.jpg",
+      "autor": "Gustavo H. Montanari",
+      "data": "2024-10-04",
+      "categoria": "acoes",
+      "id": "86f4"
+    },
+    {
+      "titulo": "Solana: A Nova Criptomoeda",
+      "descricao": "Descubra por que Solana está em alta no mercado de criptomoedas",
+      "imagem": "imagens/solana.jpg",
+      "autor": "Gustavo H. Montanari",
+      "data": "2024-10-05",
+      "categoria": "criptomoedas",
+      "id": "4407"
+    },
+    {
+      "titulo": "Ações da Tesla: Um Investimento Promissor",
+      "descricao": "As ações da Tesla estão atraindo a atenção dos investidores",
+      "imagem": "imagens/tesla.jpg",
+      "autor": "Gustavo H. Montanari",
+      "data": "2024-10-06",
+      "categoria": "acoes",
+      "id": "340e"
+    },
+    {
+      "titulo": "Microsoft e a Revolução Digital",
+      "descricao": "Como a Microsoft está moldando o futuro da tecnologia",
+      "imagem": "imagens/microsoft.jpg",
+      "autor": "Gustavo H. Montanari",
+      "data": "2024-10-07",
+      "categoria": "software",
+      "id": "940f"
+    },
+    {
+      "titulo": "Tesouro Direto: O que saber",
+      "descricao": "Entenda como funciona o Tesouro Direto",
+      "imagem": "imagens/tesouro.jpg",
+      "autor": "Gustavo H. Montanari",
+      "data": "2024-10-08",
+      "categoria": "tesouro-direto",
+      "id": "4f41"
+    }
+  ],
+  "dados-planilha": [
+    {
+      "dataPagamento": "2025-05-05",
+      "salario": 1000000,
+      "dataInicio": "2006-03-01",
+      "id": "1"
+    },
+    {
+      "id": "db46",
+      "dataPagamento": "2024-12-10",
+      "salario": 100,
+      "dataInicio": "2010-10-10"
+    },
+    {
+      "id": "9cc1",
+      "dataPagamento": "2025-02-20",
+      "salario": 100,
+      "dataInicio": "2010-10-10"
+    },
+    {
+      "id": "6c13",
+      "dataPagamento": "2025-02-20",
+      "salario": 100,
+      "dataInicio": "2010-10-10"
+    },
+    {
+      "id": "3743",
+      "dataPagamento": "2024-12-20",
+      "salario": 100,
+      "dataInicio": "2002-12-12"
+    },
+    {
+      "id": "ddea",
+      "dataPagamento": "2024-12-12",
+      "salario": 100,
+      "dataInicio": "2002-12-12"
+    },
+    {
+      "id": "3f9e",
+      "dataPagamento": "2003-02-20",
+      "salario": 150,
+      "dataInicio": "0003-02-20"
+    },
+    {
+      "id": "acbc",
+      "dataPagamento": "2024-12-12",
+      "salario": 2000,
+      "dataInicio": "2012-12-12"
+    },
+    {
+      "id": "6e1b",
+      "dataPagamento": "2024-12-12",
+      "salario": 150,
+      "dataInicio": "2012-12-12"
+    },
+    {
+      "dataPagamento": "2024-12-06",
+      "salario": 1000,
+      "dataInicio": "2024-12-03",
+      "id": "y29Kl5m"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nome_curso": "Introdução à Economia",
+      "imagem": "https://i.ytimg.com/vi/rodzaND5E9k/maxresdefault.jpg",
+      "duracao": 20,
+      "link": "https://youtu.be/mDOmLJFXKlk?si=b7jUitL05l9bn0do",
+      "plataforma": "YouTube"
+    },
+    {
+      "id": 2,
+      "nome_curso": "Macroeconomia para Iniciantes",
+      "imagem": "https://www.empiricus.com.br/uploads/2023/06/microeconomia-1-1-1024x683.jpg",
+      "duracao": 30,
+      "link": "https://www.udemy.com/course/macroeconomia-keynesiana/?couponCode=2021PM25",
+      "plataforma": "Udemy"
+    },
+    {
+      "id": 3,
+      "nome_curso": "Microeconomia e Comportamento do Consumidor",
+      "imagem": "https://jornalboavista.com.br/site/wp-content/uploads/2023/11/1-41.jpg",
+      "duracao": 15,
+      "link": "https://www.espm.br/pesquisa-espm/comportamento-do-consumidor/?utm_medium=ppc&utm_source=adwords&utm_term=&utm_campaign=EAD-POS-GRADUACAO-2025_1-PMAX-INSTITUCIONAL&hsa_src=x&hsa_kw=&hsa_mt=&hsa_acc=9720481564&hsa_grp=&hsa_ad=&hsa_cam=21962150565&hsa_tgt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiAmMC6BhA6EiwAdN5iLY8rQy7aycem93aqBtFrYWWd-0twVLzcaPoRvwnSH_fks0FWbl9-1hoC5bUQAvD_BwE",
+      "plataforma": "Coursera"
+    },
+    {
+      "id": 4,
+      "nome_curso": "Investimentos e Mercado de Capitais",
+      "imagem": "https://files.sunoresearch.com.br/p/uploads/2017/12/financas-pessoais.jpg.jpg",
+      "duracao": 10,
+      "link": "https://curso.investimentos",
+      "plataforma": "YouTube"
+    },
+    {
+      "id": 5,
+      "nome_curso": "Economia Internacional e Globalização",
+      "imagem": "https://blog.toroinvestimentos.com.br/wp-content/uploads/2023/11/mercado-de-capitais.jpg",
+      "duracao": 25,
+      "link": "https://curso.economiainternacional",
+      "plataforma": "Skillshare"
+    },
+    {
+      "id": 6,
+      "nome_curso": "Finanças Corporativas",
+      "imagem": "https://files.sunoresearch.com.br/p/uploads/2018/06/microeconomia-1024x538.jpg",
+      "duracao": 40,
+      "link": "https://curso.financascorporativas",
+      "plataforma": "Alura"
+    },
+    {
+      "id": 7,
+      "nome_curso": "Econometria Básica",
+      "imagem": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/XDP/XDP~COURSE!~econometria-basica-aplicada/XDP~COURSE!~econometria-basica-aplicada.jpeg",
+      "duracao": 35,
+      "link": "https://www.coursera.org/learn/econometria-basica-aplicada",
+      "plataforma": "Coursera"
+    },
+    {
+      "id": 8,
+      "nome_curso": "Economia do Setor Público",
+      "imagem": "https://www.onze.com.br/blog/wp-content/uploads/2020/01/shutterstock_648969952-770x478.jpg",
+      "duracao": 45,
+      "link": "https://curso.economiasetorpublico",
+      "plataforma": "Udemy"
+    },
+    {
+      "id": 9,
+      "nome_curso": "Planejamento Financeiro Pessoal",
+      "imagem": "https://phygo.com.br/wp-content/uploads/2024/04/planejamento-financeiro-pessoal-equilibre-suas-financas-2.png",
+      "duracao": 20,
+      "link": "https://curso.planejamentofinanceiro",
+      "plataforma": "EduK"
+    }
+  ]
+}

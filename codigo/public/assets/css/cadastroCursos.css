@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --first-color: rgb(198, 255, 192);
+    --input-color: rgb(61, 158, 50);
+    --border-color: rgb(95, 207, 67);
+    --primary-color: #404440;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+  
+}
+
+
+.navbar-brand{
+    font-weight: bold;
+}
+.principal h2{
+    padding: 15px;
+}
+
+.principal h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(104, 206, 75);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}
+.imagemUsuario {
+    border-radius: 50%;
+    width: 40px;  
+    height: 40px; 
+    margin-right: 8px; 
+}
+
+.dropdown-menu {
+    text-align: center;
+    background-color: #f2ffea;
+    width: 100%; /* Ajusta a largura para 100% do container pai */
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Evita que o conteúdo exceda a área */
+    white-space: nowrap; /* Impede que o texto quebre para a linha seguinte */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    padding: 0;
+    margin: 0; 
+    right: 0;
+}
+.dropdown-item {
+    display: block; /* Para que ocupe a largura total */
+    width: 100%; 
+    padding: 0; 
+    border: none; 
+    padding: 5px;
+    text-align: center; 
+    background-color: transparent; 
+}
+.dropdown-item:hover {
+    background-color: #ffffff;
+    color: #68ce4b; 
+}
+
+
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 600;
+}
+
+
+
+.card-img-top{
+    width: 150px;
+}
+
+.button{
+    background-color: green;
+    border: none;
+}
+
+.button:hover{
+    background-color: green;
+}
+
+
+/* Card de cadastro */
+.card {
+    width: 500px;
+    padding: 30px;
+    background-color: #f2ffea;
+    border: solid 1px rgb(104, 206, 75);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: start;
+    color: #333;
+    margin-bottom: 20px;
+}
+.card h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(104, 206, 75);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: solid 2px rgb(104, 206, 75);
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #67bf4f;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #5dab47;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Tornando o card mais adaptável em telas menores */
+    }
+}
+
+
+/* Inputs refinados */
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid 2px var(--border-color); /* Borda verde */
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+input.form-control:focus {
+    border-color: var(--border-color); /* Borda em destaque ao focar */
+    box-shadow: 0 0 8px var(--first-color); /* Efeito de brilho */
+    outline: none; /* Remove o outline azul padrão */
+    background-color: #ffffff; /* Fundo branco ao focar */
+}
+
+input.form-control::placeholder {
+    color: #aaa; 
+}

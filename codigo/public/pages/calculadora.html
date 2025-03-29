@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Eduarda Vieira" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">defer</script>
+        <title>Calculadora Financeira</title>
+        <link rel="stylesheet" href="../assets/css/calculadora.css" />
+    </head>
+    <body>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-light py-3 ">
+            <div class="container-fluid d-flex justify-content-between mx-3">
+                <a class="navbar-brand" href="../index.html">Moneo</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown d-flex align-items-center">
+                        <img id="imagemHeader" src="https://via.placeholder.com/100" alt="Usuario" class="imagemUsuario">
+                        <a id="headerNomeUsuario" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">   
+                            Nome Usuario 
+                        </a>
+                        <ul class="dropdown-menu mt-2" style="position: absolute; top: 100%; right: 0;">
+                            <li><a class="dropdown-item" href="perfil.html" id="btnConfig">Configurações</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:3000/modulos/login/login.html"
+                                    id="btnSair">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        
+        
+        <main>
+            <section class="principal">
+                <h2>Calculadora Financeira</h2>
+                <p>Insira abaixo as informações sobre o seu investimento para saber seus ganhos</p>
+                <section class="content">
+                    <img src="../assets/images/finance-app.svg" alt="Ilustração financeira" />
+                    <form>
+                        <div class="form_div">
+                            <label for="initial" class="form_label">Valor inicial do investimento:</label>
+                            <span class="form_prefix">R$</span>
+                            <input type="number" id="initial" class="form_input" />
+                        </div>
+                        <div class="form_div">
+                            <label for="month" class="form_label">Valor mensal:</label>
+                            <span class="form_prefix">R$</span>
+                            <input type="number" id="month" class="form_input" />
+                        </div>
+                        <div class="form_div">
+                            <label for="investimento" class="form_label">Tipo de Investimento:</label>
+                            <select id="investimento" class="form_input" onchange="atualizarTaxa()">
+                                <option value="">Selecione um investimento</option>
+                            </select>
+                        </div>
+                        <div class="form_div">
+                            <label for="rate" class="form_label">Taxa de Juros:</label>
+                            <input type="number" id="rate" class="form_input" />
+                            <span class="form_suffix">%</span>
+                        </div>
+                        <div class="form_div">
+                            <label for="period" class="form_label">Período:</label>
+                            <input type="number" id="period" class="form_input" />
+                            <span class="form_suffix">anos</span>
+                        </div>
+
+                        <div id="buttons-div">
+                            <button id="calculate" class="form_button">Calcular</button>
+                            <button id="clean" class="form_button">Limpar</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+            <div id="resultado"></div>
+            
+            <div class="scroll-wrapper">
+                <div class="chart-container">
+                    <canvas id="investmentsChart"></canvas>
+                </div>
+            </div>
+        
+            <!-- <form id="formRegistrar">
+                <h3>Cadastrar um Investimento</h3>
+                <div class="form_div">
+                    <label for="nomeRegistro">Nome do Registro:</label>
+                    <input type="text" id="nomeRegistro"  class="form_input"  required>
+                </div>
+                <div class="form_div">
+                    <label for="nomeInvestimento">Nome do Investimento:</label>
+                    <input type="text" id="nomeInvestimento"  class="form_input"  required>
+                </div>
+                <div class="form_div">
+                    <label for="valorInvestido">Valor Investido:</label>
+                    <input type="number" id="valorInvestido" class="form_input"  required>
+                </div>
+                <div class="form_div">
+                    <label for="valorTotal">Valor Total:</label>
+                    <input type="number" id="valorTotal" class="form_input" required>
+                </div>
+                <button id="save" class="form_button" type="submit">Salvar Registro</button>
+            </form> -->
+            
+            
+            
+
+            <div id="historico"><div class="scroll-wrapper">
+                <h3>Histórico de investimentos cadastrados</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Identificador do Registro</th>
+                            <th>Tipo de Investimento</th>
+                            <th>Valor Investido</th>
+                            <th>Valor Total</th>
+                            <th>Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historico-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            
+        </main>        
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       <script src="../assets/js/chart.js"></script>
+        <script src="../assets/js/calculadora.js"></script>
+        <script src="../assets/js/historico.js"></script>
+    </body>
+</html>

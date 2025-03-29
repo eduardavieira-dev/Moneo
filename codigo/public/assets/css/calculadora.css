@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --first-color: rgb(242, 192, 255);
+    --input-color: rgb(61, 158, 50);
+    --border-color: rgb(95, 207, 67);
+    --primary-color: #404440;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+  
+}
+
+
+.navbar-brand{
+    font-weight: bold;
+}
+.principal h2{
+    padding: 15px;
+}
+
+.principal h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(104, 206, 75);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}
+.imagemUsuario {
+    border-radius: 50%;
+    width: 40px;  
+    height: 40px; 
+    margin-right: 8px; 
+}
+
+.dropdown-menu {
+    text-align: center;
+    background-color: #f2ffea;
+    width: 100%; /* Ajusta a largura para 100% do container pai */
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Evita que o conteúdo exceda a área */
+    white-space: nowrap; /* Impede que o texto quebre para a linha seguinte */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    padding: 0;
+    margin: 0; 
+    right: 0;
+}
+.dropdown-item {
+    display: block; /* Para que ocupe a largura total */
+    width: 100%; 
+    padding: 0; 
+    border: none; 
+    padding: 5px;
+    text-align: center; 
+    background-color: transparent; 
+}
+.dropdown-item:hover {
+    background-color: #ffffff;
+    color: #68ce4b; 
+}
+
+main {
+    margin: 20px auto;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.principal {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f2ffea;
+    border: solid 1px rgb(104, 206, 75);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 250px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f2ffea;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.form_div {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form_label {
+    margin-bottom: 4px;
+    font-size: 16px;
+    color: var(--input-color);
+}
+
+.form_prefix {
+    position: absolute;
+    left: 12px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--input-color);
+}
+
+.form_input {
+    width: 100%;
+    padding: 12px 15px 12px 35px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form_input#rate,
+.form_input#period {
+    padding: 12px 15px 12px 10px;
+}
+
+/*
+ * Remover as setas do input de tipo number
+ */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.form_suffix {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--input-color);
+}
+
+.form_button {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: none;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 10px 5px 0;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+
+#buttons-div {
+    display: flex;
+    width: 250px;
+}
+#calculate , #save{
+    background-color: #67bf4f;
+    color: #ffffff;
+}
+
+#clean {
+    background-color: rgb(176, 224, 164);
+    border: 2px solid rgb(110, 215, 110);
+    /* color: #000; */
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resultado{
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.titulo-restltado{
+    font-weight: 600;
+}
+.card-resultado{
+    text-align: center;
+    width: 30%;
+    height: 120px;
+    place-self: center;
+    place-content: center;
+    place-items: center;
+    background-color: #e8ffda;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 8px;
+    border: 2px solid #68ce4b;
+}
+select#investimento.form_input{
+    padding: 12px 15px 12px 10px;
+    color: #51a53a;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+    .card-resultado{
+        width: 70%;
+    }
+}
+
+
+
+/* GRAFICO */
+
+/* Wrapper: rolagem horizontal */
+.scroll-wrapper {
+    overflow-x: auto;
+    width: 100%; 
+}
+
+/* Container do gráfico */
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 0px;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #e8ffda;
+    font-weight: bold;
+}
+
+.table img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .chart-container {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .chart-container {
+        width: 500px; 
+    }
+}
+
+
+/* Tabela */
+
+
+#tabela-investimentos {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#tabela-investimentos h3{
+    color: #404440;
+    text-align: center;
+    margin: 20px;
+}
+.investment-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0; 
+    text-align: center;
+    font-size: 16px;
+    background-color: #ecffe1;
+    /* border: 1px solid var(--border-color); */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.investment-table th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.investment-table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.investment-table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.investment-table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.investment-table th,
+.investment-table td {
+    padding: 10px 15px;
+    border: 1px solid rgb(90, 195, 64);
+}
+
+.investment-table th {
+    background-color: #4eb133;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.scroll-wrapper {
+    overflow-x: auto;
+}
+
+.investment-table tr:nth-child(even) {
+    background-color: #e8ffda;
+}
+
+/* Historico */
+
+#historico {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#historico h3 {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #363636;
+}
+
+.registro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    gap: 10px;
+}
+
+.registro span {
+    flex: 1;
+    min-width: 120px;
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+}
+
+.nome-registro {
+    font-weight: bold;
+    color: #222;
+}
+
+
+.deleteRegistro {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.deleteRegistro:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+@media (max-width: 600px) {
+    #historico{
+        margin: 0 auto;
+    }
+    #historico h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    #historico .registro-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        justify-content: center;
+    }
+    
+    .registro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+
+    }
+    
+    .registro span {
+        font-size: 1rem;
+        color: #555;
+        text-align: center;
+        margin: 5px 0;
+    }
+  
+}
+
+/*Formulário */
+#formRegistrar {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 450px;
+    background-color: #f2ffea;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formRegistrar h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #404440;
+}
+
+
+.form_button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.2s ease;
+    font-size: 16px;
+}
+
+
+.form_button:hover {
+    background-color: rgb(104, 206, 75);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    #formRegistrar {
+        width: 90%;
+    }
+}

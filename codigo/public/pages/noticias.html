@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Finanças</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/noticias.css">
+</head>
+<body>
+      <!-- Header -->
+      <header>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid d-flex justify-content-between mx-3">
+                <a class="navbar-brand" href="../index.html">Moneo</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown d-flex align-items-center">
+                        <img id="imagemHeader" src="https://via.placeholder.com/100" alt="Usuario" class="imagemUsuario">
+                        <a id="headerNomeUsuario" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">   
+                            Nome Usuario 
+                        </a>
+                        <ul class="dropdown-menu mt-2" style="position: absolute; top: 100%; right: 0;">
+                            <li><a class="dropdown-item" href="http://localhost:3000/modulos/login/login.html" id="btnSair">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main>
+ <div class="container-fluid">
+    <h1>Notícias sobre finanças</h1>
+    <div class="row mt-4">
+      <aside class="col-md-3">
+        <h5>Filtrar por Categoria</h5>
+        <ul class="list-group">
+          <li class="list-group-item category-filter" data-category="todas">Todas</li>
+          <li class="list-group-item category-filter" data-category="criptomoedas">Criptomoedas</li>
+          <li class="list-group-item category-filter" data-category="acoes">Ações</li>
+          <li class="list-group-item category-filter" data-category="software">Software</li>
+          <li class="list-group-item category-filter" data-category="tesouro-direto">Tesouro Direto</li>
+        </ul>
+        <input type="text" id="searchBar" class="form-control mt-3" placeholder="Pesquisar...">
+      </aside>
+
+      <main class="col-md-9">
+        <div id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
+          <div class="carousel-inner" id="carouselContent"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        
+        <div class="row mt-5" id="related-news"></div>
+        <p class="cadastro text-center"><a href="./cadastroNotica.html">Cadastrar Noticia</a></p>
+
+        <div class="container mb-3 py-1">
+
+          <form id="noticiaForm">
+            <div class="mb-3">  
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/noticias.js"></script>
+</body>
+</html>

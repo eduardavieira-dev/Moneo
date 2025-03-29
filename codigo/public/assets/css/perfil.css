@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Header */
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagemUsuario {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.dropdown-menu {
+    text-align: center;
+    background-color: #f2ffea;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    padding: 0;
+    margin: 0; 
+    right: 0;
+}
+.dropdown-item {
+    display: block; 
+    width: 100%; 
+    padding: 0;
+    border: none; 
+    padding: 5px;
+    text-align: center; 
+    background-color: transparent; 
+}
+.dropdown-item:hover {
+    background-color: #ffffff;
+    color: #68ce4b; 
+}
+
+/* Conteúdo Principal */
+.main {
+    border: 1px solid rgb(104, 206, 75);
+    background-color: #f2ffea;
+    width: 100%;
+    max-width: 900px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+/* Título */
+h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(104, 206, 75);
+    border-radius: 10px;
+}
+
+/* Perfil e Foto */
+.botao-fotoDePerfil {
+    padding: 0;
+    border: none;
+    background: transparent;
+    position: relative;
+}
+
+.botao-fotoDePerfil img {
+    width: 100px;
+    height: 100px;
+}
+
+.lapis-botao {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.textoPerfil {
+    margin-left: 15px;
+}
+
+/* Seções */
+.fundo-secao {
+    border-radius: 10px;
+    border: 1px solid rgb(104, 206, 75);
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.form-control-inline {
+    width: 100%;
+    margin-top: 5px;
+}
+
+label {
+    color: rgb(31, 81, 31);
+    font-size: 16px;
+}
+.container input:focus {
+    box-shadow: none;
+    border-color: transparent;
+    outline: none;
+    border-color: rgb(104, 206, 75);
+}
+ .container input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background: linear-gradient(130deg, #68ce4b, #60b848);
+    color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .botao-fotoDePerfil img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .textoPerfil {
+        margin-left: 10px;
+    }
+
+    .form-control-inline {
+        width: 100%;
+    }
+
+    .edit {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dropdown-menu {
+        position: static; 
+        margin-top: 10px;
+    }
+    
+}

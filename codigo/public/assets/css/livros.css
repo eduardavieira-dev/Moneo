@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-menu {
+    text-align: center;
+    background-color: #f2ffea;
+    width: 100%; /* Ajusta a largura para 100% do container pai */
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Evita que o conteúdo exceda a área */
+    white-space: nowrap; /* Impede que o texto quebre para a linha seguinte */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    padding: 0;
+    margin: 0; 
+    right: 0;
+}
+.dropdown-item {
+    display: block; /* Para que ocupe a largura total */
+    width: 100%; /* O botão ocupará toda a largura do dropdown */
+    padding: 0; /* Remove padding para evitar espaços indesejados */
+    border: none; /* Remove bordas */
+    padding: 5px;
+    text-align: center; /* Centraliza o texto */
+    background-color: transparent; 
+}
+.dropdown-item:hover {
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+    color: #68ce4b; /* Cor do texto ao passar o mouse (opcional) */
+}
+.imagemUsuario {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 8px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.container {
+    border: solid 1px rgb(104, 206, 75);
+    background-color: #f2ffea;
+    display: grid;
+    justify-self: center;
+    width: 75%;
+    min-width: 420px;
+    padding: 35px 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.23); */
+}
+
+.container h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(104, 206, 75);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+form {
+    width: 100%;
+    margin: 30px auto 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: rgb(31, 81, 31);
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 10px;
+    /* border: 1px solid rgb(31, 81, 31); */
+    margin-top: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: solid 2px;
+    border-color: rgb(104, 206, 75);
+}
+
+select {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1.2px solid rgb(31, 81, 31);
+    margin-top: 3px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../images/setadrop.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px; /* Aumenta a largura e altura */
+}
+
+select:focus {
+    outline: none;
+    border: solid 2px;
+    border-color: rgb(104, 206, 75);
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #67bf4f;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.button-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.table-responsive{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid 1px #b6e4b6;
+}
+
+td{
+    cursor: pointer;
+}
+
+
+

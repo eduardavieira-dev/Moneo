@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Finanças</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/noticias.css">
+  <style>
+
+    /* Custom Styles */
+    .button {
+        background-color: green;
+        border: none;
+    }
+
+    .button:hover {
+        background-color: green;
+    }
+
+    /* Card de cadastro */
+    .card {
+        width: 500px;
+        padding: 30px;
+        background-color: #f2ffea;
+        border: solid 1px rgb(104, 206, 75);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Para empurrar o botão para o fundo */
+        height: 100%;
+    }
+
+    h2 {
+        text-align: start;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .card h2::after {
+        content: '';
+        display: block;
+        width: 5rem;
+        height: 0.3rem;
+        background-color: rgb(104, 206, 75);
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: solid 2px rgb(104, 206, 75);
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #67bf4f;
+        color: #ffffff;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: auto; /* Faz o botão ficar na parte inferior */
+    }
+
+    button[type="submit"]:hover {
+        background-color: #5dab47;
+    }
+
+    /* Estilizando descrição e categoria */
+    .form-group-description, .form-group-category {
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    label.description, label.category {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: solid 2px rgb(104, 206, 75);
+        margin-bottom: 10px;
+        min-height: 120px;
+    }
+
+    select {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: solid 2px rgb(104, 206, 75);
+        margin-bottom: 10px;
+    }
+
+    /* Inputs refinados */
+    input.form-control, textarea#descricao.form-control , select#categoria {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: solid 2px var(--border-color);
+        margin-bottom: 10px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    input.form-control:focus, textarea#descricao.form-control:focus, select#categoria:focus {
+        border-color: var(--border-color);
+        box-shadow: 0 0 8px var(--first-color);
+        outline: none;
+        background-color: #ffffff;
+    }
+
+    input.form-control::placeholder, textarea::placeholder {
+        color: #aaa;
+    }
+
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .card {
+            width: 90%; /* Tornando o card mais adaptável em telas menores */
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid d-flex justify-content-between mx-3">
+            <a class="navbar-brand" href="../index.html">Moneo</a>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <img id="imagemHeader" src="https://via.placeholder.com/100" alt="Usuario" class="imagemUsuario">
+                    <a id="headerNomeUsuario" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">   
+                        Nome Usuario 
+                    </a>
+                    <ul class="dropdown-menu mt-2" style="position: absolute; top: 100%; right: 0;">
+                        <li><a class="dropdown-item" href="http://localhost:3000/modulos/login/login.html" id="btnSair">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="container-fluid">
+      <h1>Cadastro de Notícias</h1>
+      <div class="row mt-4">
+        <main class="col-md-9">     
+          <div class="container mb-3 py-1">
+            <h2 class="text-center">Cadastrar Nova Notícia</h2>
+            <form id="noticiaForm">
+              <div class="mb-3">
+                <label for="titulo" class="form-label">Título</label>
+                <input type="text" class="form-control" id="titulo" placeholder="Digite o título da notícia" required>
+              </div>
+              <div class="form-group form-group-description mb-3">
+                <label for="descricao" class="form-label">Descrição</label>
+                <textarea class="form-control" id="descricao" rows="3" placeholder="Digite a descrição" required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="imagem" class="form-label">URL da Imagem</label>
+                <input type="url" class="form-control" id="imagem" placeholder="Digite o link da imagem" required>
+              </div>
+              <div class="mb-3">
+                <label for="autor" class="form-label">Autor</label>
+                <input type="text" class="form-control" id="autor" placeholder="Nome do autor" required>
+              </div>
+              <div class="form-group form-group-category mb-3">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select class="form-select" id="categoria" required>
+                  <option value="criptomoedas">Criptomoedas</option>
+                  <option value="acoes">Ações</option>
+                  <option value="software">Software</option>
+                  <option value="tesouro-direto">Tesouro Direto</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-success">Cadastrar</button>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/noticias.js"></script>
+</body>
+</html>

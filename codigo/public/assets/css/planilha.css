@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0% !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.navbar a {
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-menu {
+    text-align: center;
+    background-color: #f2ffea;
+    width: 100%; 
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    padding: 0;
+    margin: 0; 
+    right: 0;
+}
+.dropdown-item {
+    display: block; 
+    width: 100%; 
+    border: none; 
+    padding: 5px !important;
+    text-align: center; 
+    background-color: transparent; 
+}
+.dropdown-item:hover {
+    background-color: #ffffff; 
+    color: #68ce4b;
+}
+.imagemUsuario {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 8px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+
+#titulo {
+    padding-top: 0% !important;
+    margin-top: 0% !important;
+    font-size: 20px;
+    text-align: start;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+
+h2 {
+    margin: 20px !important;
+    padding-top: 0% !important;
+}
+
+hr {
+    width: 95%;
+    margin: 20px;
+}
+.principal{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.resumo {
+    display: flex;
+    font-size: 1.1rem;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 7px 20px!important; 
+    box-sizing: border-box; 
+    border-radius: 8px;
+}
+.dataElimite, .pagamentoErenda {
+    flex-direction: column;
+    width: 50%; 
+    margin: 30px;
+}
+
+.inputes {
+    display: flex;
+   
+}
+input#dataPagamento, input#salario, input#valorLimite,input#dataInicio {
+    border: 2px solid #68ce4b;
+}
+main > h2 {
+    text-align: center;
+    padding: 20px !important;
+}
+
+h3 {
+    margin: 10px !important;
+    font-size: 20px !important;
+}
+
+#dataInicio, #valorLimite, #dataPagamento, #salario {
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins';
+    padding: 10px !important;
+    width: 50%;
+}
+
+#dataInicioDisplay{
+    margin-left: 10%;
+}
+
+.formulario {
+    color: #272727;
+    /*background-color: #DADADA;*/
+    border: 2px solid #68ce4b;
+    background-color: #ebffe6;
+    width: 80%;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 4px 10px 7px #5d725309;
+}
+
+.principal h2{
+    padding: 15px;
+}
+
+.principal h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(104, 206, 75);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#submitDados {
+    background-color: #67bf4f;
+    color: #ffffff;
+    margin-bottom: 30px !important;
+}
+
+#limparDados {
+    border: 2px solid #77cf5e;
+    background-color: #e1ffe5;
+    margin-bottom: 30px !important;
+}
+
+button {
+    padding: 10px !important;
+    border-radius: 25px;
+    border: none;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 35px !important;
+    margin-bottom: 20px !important;
+    /* text-transform: uppercase; */
+}
+
+#criar-linha {
+    margin-left: 10% !important;
+    cursor: pointer;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input, select, button {
+    margin: 5px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#resumoTabela {
+    margin-bottom: 5%!important;
+}
+
+#subtitulomain {
+    margin-left: 10% !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+}
+
+th, td {
+    border: 1px solid #47404031;
+    padding: 10px !important;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#tabela, #resumoTabela {
+    display: none; /* Esconde a tabela inicialmente */
+}
+
+
+#notification-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.material-symbols-outlined {
+    margin-left: auto;
+    padding-right: 20px !important;
+    position: relative;
+}
+
+.modal-header, .modal-body {
+    padding: 15px;
+}
+
+.modal-title {
+    font-size: 20px;
+}
+
+#notification-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-item.unread {
+    background-color: #f9f9f9;
+}
+
+#icon-notification {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#notificationModal .modal-header, .modal-footer {
+    background-color: #454545;
+    color: white;
+}
+
+.notificacao-pop-up {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.scroll-wrapper {
+    overflow-x: auto;
+    width: 100%; 
+}
+
+@media (max-width: 600px){
+    .inputes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dataElimite, .pagamentoErenda {
+        width: 100%;
+    }
+}
+
+
