@@ -4,7 +4,7 @@ async function fetchNoticias() {
     const response = await fetch(API_URL);
     if (!response.ok) {
       throw new Error(
-        `Erro ao buscar notícias: HTTP ${response.status} — ${response.statusText}`,
+        `Erro ao buscar notícias: HTTP ${response.status} - ${response.statusText}`,
       );
     }
     const noticias = await response.json();

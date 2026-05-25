@@ -37,7 +37,7 @@ function preencherCampos() {
 /**
  * Gera o HTML de um card de livro individual.
  * Extraído para eliminar a duplicação do template que existia dentro do if/else
- * de pegarLivros (princípio DRY — Don't Repeat Yourself).
+ * de pegarLivros (princípio DRY - Don't Repeat Yourself).
  *
  * @param {Object} livro - Objeto com os dados do livro.
  * @returns {string} HTML string do card.

@@ -75,7 +75,7 @@ function loginUser(login, senha) {
     // Se encontrou login, carrega usuário corrente e salva no Session Storage
     if (login === usuario.login && senha === usuario.senha) {
       // Remove o campo senha antes de persistir: nunca armazenar credenciais
-      // em client-side storage (OWASP — Princípio do menor privilégio)
+      // em client-side storage (OWASP - Princípio do menor privilégio)
       const { senha: _senha, ...usuarioPublico } = usuario;
       Object.assign(usuarioCorrente, usuarioPublico);
 

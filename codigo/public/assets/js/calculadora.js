@@ -7,7 +7,7 @@ const urlHistorico = "http://localhost:3000/historico";
 /** Número de períodos de capitalização por ano (capitalização mensal) */
 const PERIODOS_POR_ANO = 12;
 
-/** Cache local dos investimentos carregados da API — evita requisições repetidas */
+/** Cache local dos investimentos carregados da API - evita requisições repetidas */
 let investimentosCache = [];
 
 async function preencherInvestimentos() {

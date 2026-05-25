@@ -89,7 +89,7 @@ function salvarEdicoes() {
 
 function atualizarUsuarioNoBanco(usuario) {
   // Constrói a URL usando template literal em vez de concatenação de string,
-  // melhorando legibilidade (Clean Code — uso expressivo de template literals).
+  // melhorando legibilidade (Clean Code - uso expressivo de template literals).
   const url = `/usuarios/${usuario.id}`;
   fetch(url, {
     method: "PUT",

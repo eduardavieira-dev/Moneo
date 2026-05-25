@@ -60,7 +60,7 @@ function preencherCampos() {
 
 /**
  * Lê e normaliza os valores do formulário de dados financeiros.
- * Extração de método (Extract Method) — separa a leitura de dados
+ * Extração de método (Extract Method) - separa a leitura de dados
  * da lógica de negócio, melhorando legibilidade e testabilidade.
  *
  * @returns {{dataPagamento: string, salario: number, dataInicio: string}}
