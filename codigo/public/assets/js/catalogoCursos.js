@@ -1,36 +1,35 @@
-document.addEventListener('DOMContentLoaded', generateCourseCards);
+document.addEventListener("DOMContentLoaded", generateCourseCards);
 
 async function fetchCursos() {
-    try {
-        const response = await fetch('/cursos'); // Busca o endpoint correto
-        if (!response.ok) {
-            throw new Error('Erro ao buscar os dados: ' + response.statusText);
-        }
-        const data = await response.json(); // Recebe os dados da API
-        console.log('Dados recebidos:', data); // Verifica o retorno no console
-        // Verifica se o dado retornado é um array ou um objeto contendo "cursos"
-        return Array.isArray(data) ? data : data.cursos || [];
-    } catch (error) {
-        console.error('Erro ao buscar os dados:', error);
-        return []; // Retorna um array vazio em caso de erro
+  try {
+    const response = await fetch("/cursos"); // Busca o endpoint correto
+    if (!response.ok) {
+      throw new Error("Erro ao buscar os dados: " + response.statusText);
     }
+    const data = await response.json();
+    // Verifica se o dado retornado é um array ou um objeto contendo "cursos"
+    return Array.isArray(data) ? data : data.cursos || [];
+  } catch (error) {
+    console.error("Erro ao buscar os dados:", error);
+    return []; // Retorna um array vazio em caso de erro
+  }
 }
 
 async function generateCourseCards() {
-    const cursos = await fetchCursos(); // Chama a função que busca os cursos
-    const courseCardsContainer = document.getElementById("courseCardsContainer");
+  const cursos = await fetchCursos(); // Chama a função que busca os cursos
+  const courseCardsContainer = document.getElementById("courseCardsContainer");
 
-    if (!Array.isArray(cursos) || cursos.length === 0) {
-        const noCoursesMessage = document.createElement("p");
-        noCoursesMessage.textContent = "Nenhum curso encontrado.";
-        courseCardsContainer.appendChild(noCoursesMessage);
-        return;
-    }
+  if (!Array.isArray(cursos) || cursos.length === 0) {
+    const noCoursesMessage = document.createElement("p");
+    noCoursesMessage.textContent = "Nenhum curso encontrado.";
+    courseCardsContainer.appendChild(noCoursesMessage);
+    return;
+  }
 
-    cursos.forEach(curso => {
-        const col = document.createElement("div");
-        col.className = "col-md-4 mb-4";
-        col.innerHTML = `
+  cursos.forEach((curso) => {
+    const col = document.createElement("div");
+    col.className = "col-md-4 mb-4";
+    col.innerHTML = `
             <div class="card h-100">
                 <img src="${curso.imagem}" class="card-img-top" alt="${curso.nome_curso}">
                 <div class="card-body">
@@ -41,20 +40,21 @@ async function generateCourseCards() {
                 </div>
             </div>
         `;
-        courseCardsContainer.appendChild(col);
-    });
+    courseCardsContainer.appendChild(col);
+  });
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-    preencherCampos();
-})
+document.addEventListener("DOMContentLoaded", function () {
+  preencherCampos();
+});
 function preencherCampos() {
-const usuario = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+  const usuario = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
-if (usuario) {
-    document.getElementById('headerNomeUsuario').innerText = usuario.nome;
-    document.getElementById('imagemHeader').src = usuario.foto || 'https://via.placeholder.com/100';
-} else {
+  if (usuario) {
+    document.getElementById("headerNomeUsuario").innerText = usuario.nome;
+    document.getElementById("imagemHeader").src =
+      usuario.foto || "https://via.placeholder.com/100";
+  } else {
     alert("Usuário não encontrado.");
-}
+  }
 }
